@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>結果画面</title>
+<style type="text/css">
+<!--
+ body{
+ background-image: url(/images/haikei03.jpg);
+ }
+ .parsent{
+  text-align:center;
+  margin:0 auto;
+ }
+ 
+ -->
+ </style>
+</head>
+<body>
+<h1 style="text-align:center">結果画面</h1>
+
+<div class="parsent">
+ <span th:inline="text">
+ 
+ <h2>ランキング</h2>
+
+<script>
+
+//戻る
+function modoru(){
+  history.back();
+}
+
+//進む
+function susumu(){
+  history.forward();
+}
+
+//更新
+function koshin(){
+  location.reload();
+}
+</script>
+
+<input type="button"  value="戻る" onclick="modoru()" style="width:100px;height:50px">
+<input type="button"  value="ランキング" onclick="susumu()" style="width:100px;height:50px">
+<input type="button"  value="更新" onclick="koshin()" style="width:100px;height:50px">
+</div>
+</select>
+ 
+</body>
+</html>
