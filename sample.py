@@ -3,7 +3,7 @@ import datetime
 import MySQLdb
 
 
-API_KEY = "AIzaSyCOhDQJuJ_j7v3ALKsn81CNAhpSa8WqH1g"
+API_KEY = ""
 maxResults = 5
 
 drop = "DROP TABLE IF EXISTS youtube;"
